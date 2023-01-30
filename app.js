@@ -40,9 +40,9 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
+/***********************************************************************************************************/
 //Mongo DB Execute POST
-console.log("Tyring to connect the server...");
+console.log("App: Tyring to connect the server...");
 const { MongoClient, ServerApiVersion } = require("mongodb");
 
 const username = encodeURIComponent("jin");

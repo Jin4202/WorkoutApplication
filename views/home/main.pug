@@ -3,5 +3,13 @@ extends ../layout
 block content
   h1 Main Page
   h2 post views
-  -for(let i = 0; i < size; i++)
-    p post #{i}
+  - for(let i = 0; i < posts.length; i++)
+    p
+      ="User: " + posts[i].user_id
+      br
+      ="Contents: " + posts[i].contents
+      br
+      ="Posted: " + posts[i].timestamp
+      br
+      ="Likes: " + posts[i].likes
+      br
